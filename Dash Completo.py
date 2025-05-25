@@ -25,7 +25,8 @@ with open(ruta_preprocesador, "rb") as f:
     preprocessor = pickle.load(f)
 
 # Cargar el CSV
-ruta_csv = os.path.join(BASE_DIR, "df_limpio.csv")
+ruta_csv = os.path.join(BASE_DIR, "Felipe Analisis de datos y negocio", "df_limpio.csv")
+
 df = pd.read_csv(ruta_csv)
 # Inicializar app
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
