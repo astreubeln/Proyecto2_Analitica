@@ -1,0 +1,7 @@
+dash
+pandas
+scikit-learn
+tensorflow==2.18.0
+plotly
+numpy
+scipy
