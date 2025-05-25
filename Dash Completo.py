@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(__file__)
 
 # Cargar el modelo
 ruta_modelo = os.path.join(BASE_DIR, "modelo2.keras")
-modelo = tf.keras.models.load_model(ruta_modelo)
+modelo = tf.keras.models.load_model("modelo2.keras")
 
 # Cargar el preprocesador
 ruta_preprocesador = os.path.join(BASE_DIR, "preprocesador.pkl")

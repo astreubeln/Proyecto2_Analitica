@@ -37,8 +37,8 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(32, activation='relu'),
     tf.keras.layers.Dense(1, activation='sigmoid')
 ])
-
-model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy', tf.keras.metrics.AUC()])
+optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)  # Puedes ajustar el valor aquí
+model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=['accuracy', tf.keras.metrics.AUC()])
 model.fit(X_train, y_train, epochs=20, batch_size=32, validation_split=0.2, verbose=1)
 
 # Guardar modelo y preprocesador
