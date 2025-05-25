@@ -34,7 +34,6 @@ X_test = preprocessor.transform(X_test_raw)
 # Crear modelo
 model = tf.keras.Sequential([
     tf.keras.layers.Input(shape=(X_train.shape[1],)),
-    tf.keras.layers.Dense(64, activation='relu'),
     tf.keras.layers.Dense(32, activation='relu'),
     tf.keras.layers.Dense(1, activation='sigmoid')
 ])

@@ -6,7 +6,7 @@ import tensorflow as tf
 import pickle
 
 # Cargar modelo y preprocesador
-modelo = tf.keras.models.load_model("modelo2.keras")
+modelo = tf.keras.models.load_model("Antonia - Ciencia de Datos/modelo2.keras")
 with open("preprocesador.pkl", "rb") as f:
     preprocessor = pickle.load(f)
 
